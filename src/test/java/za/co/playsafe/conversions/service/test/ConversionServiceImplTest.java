@@ -22,4 +22,10 @@ public class ConversionServiceImplTest {
 		assertEquals(20.0, celcius,0);
 	}
 	
+	@Test
+	public void shouldConvertCelsiusToKelvin() {
+		double celsius = 20.0;
+		double kelvin = conversionServiceImpl.celsiusToKelvin(celsius);
+		assertEquals(293.15, kelvin,0);
+	}
 }

@@ -4,4 +4,6 @@ public interface ConversionService {
 
 	double kelvinTocelsius(double kelvin);
 
+	double celsiusToKelvin(double celsius);
+
 }
