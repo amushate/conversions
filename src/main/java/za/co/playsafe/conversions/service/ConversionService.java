@@ -8,4 +8,6 @@ public interface ConversionService {
 
 	double milesToKilometers(double miles);
 
+	double kilometersToMiles(double km);
+
 }

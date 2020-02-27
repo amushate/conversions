@@ -21,5 +21,11 @@ public class ConversionServiceImpl implements ConversionService {
 	public double milesToKilometers(double miles) {
 		return miles * PlaySafeConstants.MILE_TO_KILOMETER_FACTOR;
 	}
+	
+	@Override
+	public double kilometersToMiles(double km) {
+		return km*PlaySafeConstants.KILOMETER_TO_MILE_FACTOR;
+	}
+
 
 }

@@ -35,4 +35,11 @@ public class ConversionServiceImplTest {
 		double km = conversionServiceImpl.milesToKilometers(miles);
 		assertEquals(32.18688, km,0);
 	}
+	
+	@Test
+	public void shouldConvertKilometersToMiles() {
+		double km = 20.0;
+		double miles = conversionServiceImpl.kilometersToMiles(km);
+		assertEquals(12.42742384, miles,0.1);
+	}
 }
