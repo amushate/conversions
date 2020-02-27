@@ -28,4 +28,11 @@ public class ConversionServiceImplTest {
 		double kelvin = conversionServiceImpl.celsiusToKelvin(celsius);
 		assertEquals(293.15, kelvin,0);
 	}
+	
+	@Test
+	public void shouldConvertMilesToKilometers() {
+		double miles = 20.0;
+		double km = conversionServiceImpl.milesToKilometers(miles);
+		assertEquals(32.18688, km,0);
+	}
 }

@@ -6,4 +6,6 @@ public interface ConversionService {
 
 	double celsiusToKelvin(double celsius);
 
+	double milesToKilometers(double miles);
+
 }

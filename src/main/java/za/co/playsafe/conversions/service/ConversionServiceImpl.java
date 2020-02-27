@@ -17,4 +17,9 @@ public class ConversionServiceImpl implements ConversionService {
 		return kelvin - PlaySafeConstants.KELVIN_TO_CELCIOUS_FACTOR;
 	}
 
+	@Override
+	public double milesToKilometers(double miles) {
+		return miles * PlaySafeConstants.MILE_TO_KILOMETER_FACTOR;
+	}
+
 }
