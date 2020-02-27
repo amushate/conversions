@@ -29,5 +29,16 @@ public class ConversionController {
 	public double celsiusToKelvin(@Valid @RequestBody ConversionRequestDto request){
 		return conversionService.celsiusToKelvin(request.getInputValue());
 	}
+	
+	@PostMapping("/mtok")
+	public double milesToKilometers(@Valid @RequestBody ConversionRequestDto request){
+		return conversionService.milesToKilometers(request.getInputValue());
+	}
+	
+	
+	@PostMapping("/ktom")
+	public double kilometersToMiles(@Valid @RequestBody ConversionRequestDto request){
+		return conversionService.kilometersToMiles(request.getInputValue());
+	}
 
 }
